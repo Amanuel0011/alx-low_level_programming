@@ -1,8 +1,10 @@
+#include <stdio.h>
 #include "main.h"
+
 /**
- * main - Prints Holberton
+ * main - check the code
  *
- * Return: Always 0 (Success)
+ * Return: Always 0..
  */
 int main(void)
 {
@@ -15,5 +17,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
