@@ -1,12 +1,12 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-* main - check the code for Holberton School students.
-*
-* Return: Always 0.
-*/
+ * main - Entry point
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	times_table();
-	return (0);
+    print_alphabet();
+    return (0);
 }
