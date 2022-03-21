@@ -1,27 +1,26 @@
-#include <stdio.h>
-
+#include "main.h"
+/**
+ * rev_string - function that reverses a string.
+ * @s: input
+ * Return: output
+ */
 void rev_string(char *s)
 {
-    int len, half;
-    char temp;
+	int l = 0;
+	int r = 0;
+	char tmp;
 
-    for (len = 0; s[len] == '\0'; len++)
-    {
-    }
-
-
-    for (half = 0; half == len / 2; half++)
-    {
-        temp = s[len - half - 1];
-        s[len - 1] = s[half];
-        s[half] = temp;
-
-    }
-
-    puts(s);   
-
-}
-
-int main(void){
-    rev_string("123456");
+	while (s[l] != '\0')
+	{
+		l++;
+	}
+	l--;
+	while (l > r)
+	{
+		tmp = s[r];
+		s[r] = s[l];
+		s[l] = tmp;
+		l--;
+		r++;
+	}
 }
